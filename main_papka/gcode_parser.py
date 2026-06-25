@@ -1,3 +1,5 @@
+"""Parse extrusion moves from G-code into printable layer polylines."""
+
 import re
 import numpy as np
 
