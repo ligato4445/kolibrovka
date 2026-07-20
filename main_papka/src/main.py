@@ -30,7 +30,7 @@ def parse_args(argv):
     parser = argparse.ArgumentParser(description="G-code camera calibration tool")
     parser.add_argument("--gcode", default=base_dir / "data" / "gcode" / "spiral.gcode")
     parser.add_argument("--image", default=base_dir / "data" / "photo" / "spiral.jpg")
-    parser.add_argument("--calibration", default=base_dir / "calibration.json")
+    parser.add_argument("--calibration", default=base_dir / "data" / "calibration_file" / "calibration.json")
     parser.add_argument("--max-layers", type=int, default=100)
     parser.add_argument("--projection-opacity", type=float, default=0.8)
     args = parser.parse_args(argv)
